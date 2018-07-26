@@ -12,4 +12,10 @@ class DiceTest < MiniTest::Test
     assert_equal(6, @dice.sides())
   end
 
+  def test_can_roll()
+    result = @dice.roll()
+    numbers = [1, 2, 3, 4, 5, 6]
+    assert_equal(true, numbers.include?(result))
+  end
+
 end
