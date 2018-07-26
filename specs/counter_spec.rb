@@ -16,4 +16,9 @@ class CounterTest < MiniTest::Test
     assert_equal(0, @counter.position())
   end
 
+  def test_can_move()
+    @counter.move(5)
+    assert_equal(5, @counter.position())
+  end
+
 end
