@@ -10,5 +10,4 @@ class Counter
   def move(spaces)
     @position += spaces
   end
-
 end

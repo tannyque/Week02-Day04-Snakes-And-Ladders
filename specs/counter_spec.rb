@@ -12,7 +12,7 @@ class CounterTest < MiniTest::Test
     assert_equal("Red", @counter.colour())
   end
 
-  def test_position_starts_at_0
+  def test_position_starts_at_0()
     assert_equal(0, @counter.position())
   end
 
@@ -26,5 +26,4 @@ class CounterTest < MiniTest::Test
     @counter.move(-2)
     assert_equal(3, @counter.position())
   end
-
 end

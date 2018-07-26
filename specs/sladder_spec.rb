@@ -17,7 +17,7 @@ class SladderTest < MiniTest::Test
     assert_equal(11, @ladder.spaces_to_travel())
   end
 
-  def test_can_get_snakes_spaces_to_travel()
+  def test_can_get_snake_spaces_to_travel()
     assert_equal(-12, @snake.spaces_to_travel())
   end
 
