@@ -7,8 +7,8 @@ class Counter
     @position = 0
   end
 
-  def move(number)
-    @position += number
+  def move(spaces)
+    @position += spaces
   end
 
 end
