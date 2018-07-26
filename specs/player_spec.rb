@@ -28,4 +28,9 @@ class PlayerTest < MiniTest::Test
     assert_equal(true, numbers.include?(result))
   end
 
+  def test_move_counter()
+    @player.move_counter(6)
+    assert_equal(6, @player.counter().position())
+  end
+
 end

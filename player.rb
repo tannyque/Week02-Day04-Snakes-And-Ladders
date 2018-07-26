@@ -11,4 +11,8 @@ class Player
     return dice.roll()
   end
 
+  def move_counter(spaces)
+    @counter.move(spaces)
+  end
+
 end
