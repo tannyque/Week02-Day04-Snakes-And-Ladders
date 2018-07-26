@@ -2,6 +2,7 @@ require("minitest/autorun")
 require("minitest/rg")
 require_relative("../player.rb")
 require_relative("../counter.rb")
+require_relative("../dice.rb")
 
 class PlayerTest < MiniTest::Test
 
@@ -14,10 +15,17 @@ class PlayerTest < MiniTest::Test
     assert_equal("Upul", @player.name())
   end
 
-# Chaining methods by getting the counter from the player and the getter from
-# the colour
+  # Chaining methods by getting the counter from the player and the getter from
+  # the colour
   def test_has_counter()
     assert_equal("Red", @player.counter().colour())
+  end
+
+  def test_can_roll_dice()
+    dice = Dice.new(6)
+    result = @player.roll_dice(dice)
+    numbers = [1, 2, 3, 4, 5, 6]
+    assert_equal(true, numbers.include?(result))
   end
 
 end

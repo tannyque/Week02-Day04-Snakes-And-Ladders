@@ -7,4 +7,8 @@ class Player
     @counter = counter
   end
 
+  def roll_dice(dice)
+    return dice.roll()
+  end
+
 end
